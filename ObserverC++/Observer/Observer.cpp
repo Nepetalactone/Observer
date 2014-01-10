@@ -1,14 +1,10 @@
 // Observer.cpp : Definiert den Einstiegspunkt für die Konsolenanwendung.
 //
-
-#include "ConcreteNewsListener.h"
 #include "NewsServer.h"
-#include "NewsListenerInterface.h"
-#include "stdafx.h"
-#include <list>
+#include "ConcreteNewsListener.h"
+#include "stdio.h"
 
-
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char** argv)
 {
 	NewsServer* server = new NewsServer();
 	ConcreteNewsListener* firstListener = new ConcreteNewsListener();
@@ -18,6 +14,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	server->propagateNews("First News");
 
+	printf("%s\n", firstListener->getData().c_str());
+	printf("%s\n", secondListener->getData().c_str());
+
+	server->detach(secondListener);
+
+	server->propagateNews("Second News");
+
+	printf("%s\n", firstListener->getData().c_str());
+	printf("%s\n", secondListener->getData().c_str());
 }
-
-
