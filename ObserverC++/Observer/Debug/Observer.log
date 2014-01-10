@@ -1,46 +1,41 @@
-﻿Der Buildvorgang wurde am 08.01.2014 11:19:30 gestartet.
-     1>Projekt "C:\Users\Tobias\Documents\ObserverC++\Observer\Observer\Observer.vcxproj" auf Knoten "2", Build Ziel(e).
+﻿Build started 08.01.2014 18:56:32.
+     1>Project "I:\Documents\Observer\ObserverC++\Observer\Observer.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Observer.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConcreteNewsListener.cpp NewsListenerInterface.cpp NewsServer.cpp Observer.cpp
+         K:\Programme (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Observer.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ConcreteNewsListener.cpp Observer.cpp
          Observer.cpp
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(4): warning C4627: "#include "ConcreteNewsListener.h"": Wird bei der Suche nach Verwendung des vorkompilierten Headers übersprungen.
-                 "stdafx.h" Direktive hinzufügen oder vorkompilierten Header erneut erstellen
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(5): warning C4627: "#include "NewsServer.h"": Wird bei der Suche nach Verwendung des vorkompilierten Headers übersprungen.
-                 "stdafx.h" Direktive hinzufügen oder vorkompilierten Header erneut erstellen
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(6): warning C4627: "#include "NewsListenerInterface.h"": Wird bei der Suche nach Verwendung des vorkompilierten Headers übersprungen.
-                 "stdafx.h" Direktive hinzufügen oder vorkompilierten Header erneut erstellen
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(13): error C2065: 'NewsServer': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(13): error C2065: 'server': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(13): error C2061: Syntaxfehler: Bezeichner 'NewsServer'
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(14): error C2065: 'ConcreteNewsListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(14): error C2065: 'firstListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(14): error C2061: Syntaxfehler: Bezeichner 'ConcreteNewsListener'
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(15): error C2065: 'server': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(15): error C2227: Links von "->attach" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
-                 Typ ist ''unknown-type''
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(15): error C2065: 'firstListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(16): error C2065: 'ConcreteNewsListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(16): error C2065: 'secondListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(16): error C2061: Syntaxfehler: Bezeichner 'ConcreteNewsListener'
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(17): error C2065: 'server': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(17): error C2227: Links von "->attach" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
-                 Typ ist ''unknown-type''
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(17): error C2065: 'secondListener': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(19): error C2065: 'server': nichtdeklarierter Bezeichner
-     1>c:\users\tobias\documents\observerc++\observer\observer\observer.cpp(19): error C2227: Links von "->propagateNews" muss sich ein Zeiger auf Klassen-/Struktur-/Union-/generischen Typ befinden.
-                 Typ ist ''unknown-type''
-         NewsServer.cpp
-     1>c:\users\tobias\documents\observerc++\observer\observer\newsserver.cpp(5): error C2011: 'NewsServer': 'class' Typneudefinition
-                 c:\users\tobias\documents\observerc++\observer\observer\newsserver.h(7): Siehe Deklaration von 'NewsServer'
-         NewsListenerInterface.cpp
-     1>c:\users\tobias\documents\observerc++\observer\observer\newslistenerinterface.cpp(5): error C2011: 'NewsListenerInterface': 'class' Typneudefinition
-                 c:\users\tobias\documents\observerc++\observer\observer\newslistenerinterface.h(4): Siehe Deklaration von 'NewsListenerInterface'
+     1>i:\documents\observer\observerc++\observer\observer.cpp(4): warning C4627: '#include "ConcreteNewsListener.cpp"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>i:\documents\observer\observerc++\observer\observer.cpp(5): warning C4627: '#include "NewsServer.cpp"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>i:\documents\observer\observerc++\observer\observer.cpp(6): warning C4627: '#include "NewsListenerInterface.cpp"': skipped when looking for precompiled header use
+                 Add directive to 'stdafx.h' or rebuild precompiled header
+     1>i:\documents\observer\observerc++\observer\observer.cpp(13): error C2065: 'NewsServer' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(13): error C2065: 'server' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(13): error C2061: syntax error : identifier 'NewsServer'
+     1>i:\documents\observer\observerc++\observer\observer.cpp(14): error C2065: 'ConcreteNewsListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(14): error C2065: 'firstListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(14): error C2061: syntax error : identifier 'ConcreteNewsListener'
+     1>i:\documents\observer\observerc++\observer\observer.cpp(15): error C2065: 'server' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(15): error C2227: left of '->attach' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>i:\documents\observer\observerc++\observer\observer.cpp(15): error C2065: 'firstListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(16): error C2065: 'ConcreteNewsListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(16): error C2065: 'secondListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(16): error C2061: syntax error : identifier 'ConcreteNewsListener'
+     1>i:\documents\observer\observerc++\observer\observer.cpp(17): error C2065: 'server' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(17): error C2227: left of '->attach' must point to class/struct/union/generic type
+                 type is ''unknown-type''
+     1>i:\documents\observer\observerc++\observer\observer.cpp(17): error C2065: 'secondListener' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(19): error C2065: 'server' : undeclared identifier
+     1>i:\documents\observer\observerc++\observer\observer.cpp(19): error C2227: left of '->propagateNews' must point to class/struct/union/generic type
+                 type is ''unknown-type''
          ConcreteNewsListener.cpp
-     1>c:\users\tobias\documents\observerc++\observer\observer\concretenewslistener.cpp(5): error C2011: 'ConcreteNewsListener': 'class' Typneudefinition
-                 c:\users\tobias\documents\observerc++\observer\observer\concretenewslistener.h(5): Siehe Deklaration von 'ConcreteNewsListener'
-         Code wird generiert...
-     1>Die Erstellung des Projekts "C:\Users\Tobias\Documents\ObserverC++\Observer\Observer\Observer.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
+     1>i:\documents\observer\observerc++\observer\concretenewslistener.cpp(9): error C2084: function 'ConcreteNewsListener::ConcreteNewsListener(void)' already has a body
+                 i:\documents\observer\observerc++\observer\concretenewslistener.h(10) : see previous definition of '{ctor}'
+     1>i:\documents\observer\observerc++\observer\concretenewslistener.cpp(18): error C3861: 'setData': identifier not found
+         Generating Code...
+     1>Done Building Project "I:\Documents\Observer\ObserverC++\Observer\Observer.vcxproj" (Build target(s)) -- FAILED.
 
-Fehler beim Buildvorgang.
+Build FAILED.
 
-Verstrichene Zeit 00:00:02.09
+Time Elapsed 00:00:00.77

@@ -41,9 +41,6 @@
     <ClCompile Include="Observer.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="NewsListenerInterface.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
     <ClCompile Include="ConcreteNewsListener.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>

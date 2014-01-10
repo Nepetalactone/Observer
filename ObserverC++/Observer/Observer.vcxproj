@@ -87,7 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConcreteNewsListener.cpp" />
-    <ClCompile Include="NewsListenerInterface.cpp" />
     <ClCompile Include="NewsServer.cpp" />
     <ClCompile Include="Observer.cpp" />
     <ClCompile Include="stdafx.cpp">

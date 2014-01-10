@@ -2,32 +2,29 @@
 #include "ConcreteNewsListener.h"
 
 
-class ConcreteNewsListener : public NewsListenerInterface
+
+std::string data;
+
+ConcreteNewsListener::ConcreteNewsListener(void)
 {
+}
 
-	private : std::string data;
+ConcreteNewsListener::~ConcreteNewsListener(void)
+{
+}
 
-	ConcreteNewsListener::ConcreteNewsListener(void)
-	{
-	}
+void update(std::string data)
+{
+	setData(data);
+}
 
-	ConcreteNewsListener::~ConcreteNewsListener(void)
-	{
-	}
+std::string getData()
+{
+	return data;
+}
 
-	void update(std::string data)
-	{
-		setData(data);
-	}
+void setData(std::string newData)
+{
+	data = newData;
+}
 
-	std::string getData()
-	{
-		return data;
-	}
-
-	private : void setData(std::string newData)
-	{
-		data = newData;
-	}
-
-};

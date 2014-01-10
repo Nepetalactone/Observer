@@ -10,7 +10,7 @@ public:
 	ConcreteNewsListener(void) : NewsListenerInterface() {} ;
 	~ConcreteNewsListener(void);
 	void update(std::string data);
-	std::string getData() { return data; }
-	void setData(std::string newData) { data = newData; }
+	std::string getData();
+	void setData(std::string newData);
 };
 
