@@ -1,7 +1,8 @@
-#pragma once
+#ifndef _NEWS_SERVER_H_
+#define _NEWS_SERVER_H_
+
 #include "NewsListenerInterface.h"
 #include <list>
-#include <string>
 
 class NewsServer
 {
@@ -16,3 +17,4 @@ public:
 	void propagateNews(std::string news);
 };
 
+#endif
