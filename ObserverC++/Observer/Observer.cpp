@@ -3,6 +3,7 @@
 #include "NewsServer.h"
 #include "ConcreteNewsListener.h"
 #include "stdio.h"
+#include <string>
 
 int main(int argc, char** argv)
 {
@@ -23,4 +24,13 @@ int main(int argc, char** argv)
 
 	printf("%s\n", firstListener->getData().c_str());
 	printf("%s\n", secondListener->getData().c_str());
+
+	void (*pPropagateNews)(std::string) = server->propagateNews;
+
+	pPropagateNews("Third News");
+
+	printf("%s\n", firstListener->getData().c_str());
+	printf("%s\n", secondListener->getData().c_str());
+
+	printf("asdf");
 }
